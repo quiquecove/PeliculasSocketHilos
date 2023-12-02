@@ -1,5 +1,8 @@
 package actividadSockets.servidor;
-public class Pelicula {
+
+import java.io.Serializable;
+
+public class Pelicula implements Serializable {
     // Atributos
     private String titulo;
     private String director;
@@ -42,11 +45,9 @@ public class Pelicula {
     // Método toString para imprimir información sobre la película
     @Override
     public String toString() {
-        return "Pelicula{" +
-                ", titulo='" + titulo + '\'' +
+        return "titulo='" + titulo + '\'' +
                 ", director='" + director + '\'' +
-                ", precio=" + precio +
-                '}';
+                ", precio=" + precio;
     }
 }
 
